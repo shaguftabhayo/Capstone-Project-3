@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+font{
+    font-family: "Inter Tight", sans-serif;
+}
+.font-14{
+    font-size: 14px;
+}
+.navbar{
+    background-color: #0AAD0A;
+}
+.green{
+    color: #0AAD0A;
+}
+.color1{
+  color: #21313C;
+}
+.bg-color{
+    background-color:#001E2B ;
+}
+.bg-color2{
+    background-color: #F0F3F2;
+}
+.color2{
+    color: #9A9DB1;
+}
+.bg-img-1{
+    background-image: url(./images/banner-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-img-2{
+    background-image: url(./images/ad-banner-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-img-3{
+    background-image: url(./images/ad-banner-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.yellow{
+    color: #fcd53f;
+}
+

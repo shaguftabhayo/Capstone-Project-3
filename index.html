@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <!-- Full Screen -->
+    <header class="">
+        <div class="  my-3 container">
+            <div class="row ">
+                <div class="col-lg-2 col-md-2 col-xs-12">
+                    <img src="./images/freshcart-logo.svg" alt="">
+                </div>
+                <div class="col-lg-8 col-md-8 col-xs-12">
+                    <div class=" d-flex ">
+                        <div>
+                            <div class="input-group">
+                                <button class="btn border  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">All categories</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Milk Drinks</a></li>
+                                    <li><a class="dropdown-item" href="#">Yogurt and Curd</a></li>
+                                    <li><a class="dropdown-item" href="#">Eggs</a></li>
+                                    <li><a class="dropdown-item" href="#">Bun and Bakery</a></li>
+                                    <li><a class="dropdown-item" href="#">Cheese</a></li>
+                                    <li><a class="dropdown-item" href="#">Condensed Milk</a></li>
+                                    <li><a class="dropdown-item" href="#">Dairy product</a></li>
+                                </ul>
+                                <input type="text" class="form-control w-50"
+                                    aria-label="Text input with 2 dropdown buttons" placeholder="Search For Products">
+                                <button class="btn border " type="button" data-bs-toggle="" aria-expanded="false">
+                                    <iconify-icon class="" icon="iconamoon:search"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn border  mx-4 " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <iconify-icon class="" icon="carbon:location"></iconify-icon>
+                                <span>Pick Location</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-12">
+                    <div>
+                        <iconify-icon class="fs-4" icon="tabler:heart"></iconify-icon>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">
+
+                                  </h1> -->
+                                  <iconify-icon class="mx-2 fs-4" icon="iconamoon:profile-light"></iconify-icon>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                                            <div class="col-sm-10">
+                                              <input type="text" class="form-control" id="inputEmail3">
+                                            </div>
+                                          </div>
+                                        <div class="row mb-3">
+                                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                          <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="inputEmail3">
+                                          </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                          <div class="col-sm-10">
+                                            <input type="password" class="form-control" id="inputPassword3">
+                                          </div>
+                                        </div>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign-in</button>
+                                  <button type="button" class="btn btn-primary">Sign-up</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <button class="border-0 bg-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <iconify-icon class="fs-4" icon="ri:shopping-bag-3-line"></iconify-icon></button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Shop Cart</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <p>Location in 382480</p>
+                                <hr>
+                                <p class="p-2 border-danger rounded bg-danger-subtle">
+                                    You’ve got FREE delivery. Start checkout now!
+                                </p>
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid navbar">
+                <a class="navbar-brand text-white fs-6 fw-bold ms-5" href="#">
+                    <iconify-icon class="fw-bold text-white" icon="hugeicons:menu-square"></iconify-icon> All
+                    Departments
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white " href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Home 1</a></li>
+                                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                                <li><a class="dropdown-item" href="#">Home 3</a></li>
+                                <li><a class="dropdown-item" href="#">Home 4</a></li>
+                                <li><a class="dropdown-item" href="#">Home 5</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shop Frid-Filter</a></li>
+                                <li><a class="dropdown-item" href="#">Shop Grid-3 column</a></li>
+                                <li><a class="dropdown-item" href="#">Shop List-Filter</a></li>
+                                <li><a class="dropdown-item" href="#">Shop Filter</a></li>
+                                <li><a class="dropdown-item" href="#">Shop Wide</a></li>
+                                <li><a class="dropdown-item" href="#">Shop single</a></li>
+                                <li><a class="dropdown-item" href="#">Shop single v2</a></li>
+                                <li><a class="dropdown-item" href="#">Shop wishlist</a></li>
+                                <li><a class="dropdown-item" href="#">Shop cart</a></li>
+                                <li><a class="dropdown-item" href="#">Shop checkout</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Stores
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Store List</a></li>
+                                <li><a class="dropdown-item" href="#">Store Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Store Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Mega Menu
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Store List</a></li>
+                                <li><a class="dropdown-item" href="#">Store Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Store Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Catogery</a></li>
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">404 Error</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sign in</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                                <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+                                <li><a class="dropdown-item" href="#">My Account</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Doc</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- For small Screen -->
+     <header>
+        
+     </header>
+    <section class="container">
+        <div class="d-flex row align-items-center bg-color2 my-4 py-4 rounded">
+            <div class="col-lg-2 col-md-2 col-xs-12">
+                <img src="./images/cart.svg" alt="">
+            </div>
+            <div class="col-lg-7 col-md-7 col-xs-12">
+                <h3 class="fw-bold color1 font">Welcome to FreshCart</h3>
+                <p class="color2 font font-14">
+                    Download the app get free food & <span class="green">$30</span> off on your first order.
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-xs-12">
+                <button type="button" class=" bg-color font border-0 rounded py-2 px-3 text-white fw-bold">Download
+                    FreshCart
+                    App</button>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="bg-img-1 p-4   rounded ">
+                    <h1 class="fs-3 font fw-bold color1">10% cashback on
+                        personal care</h1>
+                    <p class="fs-6 Semibold font weight text color2">
+                        Max cashback: $12<br> Code: <span class="color1 font fw-bold">CARE12</span>
+                    </p>
+                    <button class="text-white p-2 font font-14 bg-color rounded border-0">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-img-2 p-3 rounded  ">
+                    <h1 class="fs-3 fw-bold color1 font">Say yes to<br> season’s fresh</h1>
+                    <p class="fs-5 font Semibold weight text color2">
+                        Refresh your day<br> the fruity way
+                    </p>
+                    <button class="text-white font fon-14 p-2 bg-color rounded border-0">
+                        Shop Now
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-img-3 p-3  rounded">
+                    <h1 class="fs-3 fw-bold color1 font">When in doubt,<br>eat ice cream</h1>
+                    <p class="fs-5 Semibold weight font text color2">
+                        Enjoy a scoop of<br> summer today
+                    </p>
+                    <button class="text-white font font-14 p-2 bg-color rounded border-0">
+                        Shop Now
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="my-5">
+            <h1 class="fs-3 my-3 font pt-5 Semibold weight font text">Shop by Category</h1>
+
+            <div>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-dairy-bread-eggs.jpg" alt="Dairy, Bread and Eggs">
+                            <p class="card-text text-center font font-14 color2"> Dairy, Bread and Eggs</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-snack-munchies.jpg" alt="Snack and Munchies-img">
+                            <p class="card-text text-center font font-14 color2"> Snack and Munchies</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-bakery-biscuits.jpg" alt="Bakery and Biscuits">
+                            <p class="card-text text-center font font-14 color2"> Bakery and Biscuits</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-instant-food.jpg" alt="Instant Food">
+                            <p class="card-text text-center font font-14 color2">Instant Food</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-4">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="border rounded p-5">
+                            <img class="ms-4" src="./images/category-tea-coffee-drinks.jpg" alt="Tea,Coffee and Drinks">
+                            <p class="card-text text-center font font-14 color2">Tea,Coffee and Drinks</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-fruits-vegetables.jpg"
+                                alt="Fruites and Vegetables">
+                            <p class="card-text text-center font font-14 color2"> Fruites and Vegetables</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-cold-drinks-juices.jpg"
+                                alt="Cold Drinks and Juices">
+                            <p class="card-text text-center font font-14 color2"> Cold Drinks and Juices</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-chicken-meat-fish.jpg"
+                                alt="Cold Drinks and Juices">
+                            <p class="card-text text-center font font-14 color2">Chicken Meat and Fish</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="border rounded p-5">
+                            <img class="ms-4" src="./images/category-baby-care.jpg" alt="Baby Care">
+                            <p class="card-text text-center font font-14 color2">Baby Care</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-cleaning-essentials.jpg" alt="Cleaning Essantials">
+                            <p class="card-text text-center font font-14 color2">Cleaning Essantials</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-pet-care.jpg" alt="Pet Care">
+                            <p class="card-text text-center font font-14 color2">Pet Care</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded p-5 ">
+                            <img class="ms-4" src="./images/category-atta-rice-dal.jpg" alt="Atta Rice and Daal">
+                            <p class="card-text text-center font font-14 color2">Atta Rice and Daal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h4 class="fs-3 font my-3 pt-5 Semibold weight text">Fruits & vegetables</h4>
+                    <p class="color2 font">eat fresh, stay healthy</p>
+                </div>
+                <div>
+                    <iconify-icon class="color2 fs-2" icon="icon-park-solid:right-c"></iconify-icon>
+                    <iconify-icon class="color2 fs-2" icon="icon-park-solid:right-c"></iconify-icon>
+                </div>
+            </div>
+            <div>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="border rounded  ">
+                            <button class="bg-danger font font-14 border-0 rounded text-white ms-4 mt-4">Sale</button>
+                            <div>
+                                <img class="" src="./images/apple-img.jpg" alt="apple-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font font-14 fs-6 color2"> Fruit and Vegetables</span><br>
+                                <span class="font font-14">Fresh Apple</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon class="yellow" icon="fluent:star-half-16-regular"></iconify-icon>
+                                <span class="color2 font font-14">4.5(149)</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="Semibold weight text font font-14">$18<span
+                                            class="color2 text-decoration-line-through font font-14">$24</span></p>
+                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font font-14">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded  ">
+                            <button class="bg-success font font-14 border-0 rounded text-white ms-4 mt-4">14%</button>
+                            <div>
+                                <img class="" src="./images/pine apple img.jpg" alt="Pineapple-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font font-14 fs-6 color2"> Fruit and Vegetables</span><br>
+                                <span class="font font-14">Golden PineApple</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon class="yellow" icon="fluent:star-half-16-regular"></iconify-icon>
+                                <span class="color2 font font-14">4.5(25)</span>
+                                <div class="d-flex justify-content-between font font-14">
+                                    <p class="Semibold weight text">$24</p>
+                                    <button class="navbar border-0 font font-14 p-2 text-white rounded fs-6">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded  ">
+                            <div>
+                                <img class="mt-5" src="./images/Kiwi-img.jpg" alt="kiwi-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font font-14 fs-6 color2"> Fruit and Vegetables</span><br>
+                                <span class="font font-14">Fresh Kiwi</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon class="yellow" icon="fluent:star-half-16-regular"></iconify-icon>
+                                <span class="color2 font font-14">5(469)</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="Semibold weight text font font-14">$24</p>
+                                    <button class="navbar border-0 p-2 text-white rounded font font-14 fs-6">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded  ">
+                            <button class="bg-danger font font-14 border-0 rounded text-white ms-4 mt-4">Hot</button>
+                            <div>
+                                <img class="" src="./images/banana-img.jpg" alt="Banana-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font font-14 fs-6 color2"> Fruit and Vegetables</span><br>
+                                <span>Golden Banana</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon class="yellow" icon="fluent:star-half-16-regular"></iconify-icon>
+                                <span class="color2 font font-14">3.5(456)</span>
+                                <div class="d-flex justify-content-between font font-14">
+                                    <p class="Semibold weight text font font-14">$3
+                                        <span class="color2 text-decoration-line-through font font-14">$5</span>
+                                    </p>
+                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font font-14">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h4 class="lh-1 my-3 pt-5 Semibold weight text font">Breakfast & dairy</h4>
+                    <p class="color2 font">butter, cheese, milk, curd and more</p>
+                </div>
+                <div>
+                    <iconify-icon class="color2 fs-2" icon="icon-park-solid:right-c"></iconify-icon>
+                    <iconify-icon class="color2 fs-2" icon="icon-park-solid:right-c"></iconify-icon>
+                </div>
+            </div>
+            <div>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="border rounded  ">
+                            <button class="bg-danger font font-14 border-0 rounded text-white ms-4 mt-4">Sale</button>
+                            <div>
+                                <img class="" src="./images/haldrim-img.jpg" alt="haldiram-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font-14 font  fs-6 color2">Snacks and Munchies</span><br>
+                                <span class="font-14 font">Haldiram's Sev Bhujia</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon class="yellow" icon="fluent:star-half-16-regular"></iconify-icon>
+                                <span class="color2 font-14 font">4.5(149)</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="Semibold weight text font-14 font">$13<span
+                                            class="color2 text-decoration-line-through font-14 font">$18</span></p>
+                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded  ">
+                            <button class="bg-success font font-14 border-0 rounded text-white ms-4 mt-4">14%</button>
+                            <div>
+                                <img class="" src="./images/nutri-img.jpg" alt="Pineapple-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font-14 fs-6 color2 font">Bakery and Biscuites</span><br>
+                                <span class="font-14 font">NutriChoice Digestive</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon class="yellow" icon="fluent:star-half-16-regular"></iconify-icon>
+                                <span class="color2 font-14 font">4.5(25)</span>
+                                <div class="d-flex justify-content-between ">
+                                    <p class="Semibold weight text font-14 font">$24</p>
+                                    <button class="navbar border-0 p-2 font text-white rounded fs-6 font-14">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded  ">
+                            <div>
+                                <img class="mt-5" src="./images/choclate-img.jpg" alt="choclate-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font-14 font fs-6 color2">Bakery and Biscuits</span><br>
+                                <span class="font-14 font">Cadbury 5 Star Choclate</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <span class="color2 font-14 font">5(469)</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="Semibold weight text font-14 font">$32
+                                        <span class="color2 text-decoration-line-through font-14 font">$35</span>
+                                    </p>
+                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded  ">
+                            <button class="bg-danger font border-0 rounded text-white ms-4 mt-4 font-14">sale</button>
+                            <div>
+                                <img class="" src="./images/blueberry-img.jpg" alt="bluberry-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font fs-6 color2 font-14">Dairy, Bread and Eggs</span><br>
+                                <span class="font-14 font">Blueberry Greek Yogurt</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon class="yellow" icon="fluent:star-half-16-regular"></iconify-icon>
+                                <span class="color2 font-14 font">3.5(456)</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="Semibold weight text font-14 font">$18
+                                        <span class="color2 text-decoration-line-through font-14 font">$24</span>
+                                    </p>
+                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h4 class="lh-1 my-3 pt-5 Semibold weight text font">Biscuits, snacks & chocolates</h4>
+                    <p class="color2 font ">discover a wide variety of munchies</p>
+                </div>
+                <div>
+                    <iconify-icon class="color2 fs-2" icon="icon-park-solid:right-c"></iconify-icon>
+                    <iconify-icon class="color2 fs-2" icon="icon-park-solid:right-c"></iconify-icon>
+                </div>
+            </div>
+            <div>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="border rounded  ">
+
+                            <div>
+                                <img class="mt-4" src="./images/chesse-img.jpg" alt="chesse-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font-14 fs-6 color2 font">Dairy Bread and Eggs</span><br>
+                                <span class="font-14 font">Britannia Chesse Slice</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <span class="color2 font-14 font">3(345)</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="Semibold weight text font-14 font">$24</p>
+                                    <button class="navbar font border-0 p-2 text-white rounded font-14">+ Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded  ">
+
+                            <div>
+                                <img class="mt-4" src="./images/corn-img.jpg" alt="corn-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font-14 fs-6 color2 font">Instant Food</span><br>
+                                <span class="font-14 font">Kellogg's Original Cereals </span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon class="yellow" icon="fluent:star-half-16-regular"></iconify-icon>
+                                <span class="color2 font-14 font">4(90)</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="Semibold weight text font-14 font">$32
+                                        <span class="color2 font-14 text-decoration-line-through font">$35</span>
+                                    </p>
+                                    <button class="navbar border-0 font-14 p-2 text-white rounded fs-6 font">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded  ">
+                            <div>
+                                <img class="mt-4" src="./images/slurrp-img.jpg" alt="slurrp-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text lh-1 font-14 font fs-6 color2">Snack and Munchies</span><br>
+                                <span class="font-14 font">Slurrp Millet Choclate</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <span class="color2 font-14 font">4.5(67)</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="Semibold weight text font">$3
+                                        <span class="color2 font-14 text-decoration-line-through font">$5</span>
+                                    </p>
+                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="border rounded  ">
+
+                            <div>
+                                <img class="mt-4" src="./images/blueberry-img.jpg" alt="bluberry-img"><br>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <span class="card-text font lh-1 font-14 fs-6 color2">Dairy, Bread and Eggs</span><br>
+                                <span class="font-14 font">Amul Butter -500g</span><br>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon icon="fluent-emoji-flat:star"></iconify-icon>
+                                <iconify-icon class="yellow" icon="fluent:star-half-16-regular"></iconify-icon>
+                                <span class="color2 font-14 font">3.5(89)</span>
+                                <div class="d-flex justify-content-between">
+                                    <p class="Semibold weight text font-14 font">$13
+                                        <span class="color2 font-14 text-decoration-line-through font">$18</span>
+                                    </p>
+                                    <button class="navbar border p-2 text-white rounded font-14 fs-6 font">+
+                                        Add</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <hr>
+        <div class=" align-items-center justify-content-center py-5 row">
+            <div class="col-lg-4 col-md-4 col-xs-12">
+                <img src="./images/mobile-img.png" alt="mobile-img">
+            </div>
+            <div class=" col-lg-4 col-md-4 col-xs-12">
+                <h4 class="fw-bold fs-3 font">Get the FreshCart app</h4>
+                <p class="color2 font font-14 color1">We will send you a link, open it on your phone to download the
+                    app.</p>
+                <div>
+                    <div class="form-check form-check-inline py-2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label font font-14 color2" for="inlineRadio1">Email</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label font font-14 color2" for="inlineRadio2">Phone</label>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="phone" class="form-control" placeholder="Phone" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <button class="border-0 text-white fw-bold font-14 rounded navbar p-2 ms-3 font">
+                        Share App Link
+                    </button>
+                </div>
+                <div>
+                    <p class="font color2 font-14">Download app from</p>
+                    <div class="download-btns">
+                        <img src="./images/apple-btn.svg" alt="apple-logo">
+                        <img src="./images/googleplay-btn.svg" alt="play-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row py-5 my-5">
+            <div class="col-lg-3 col-md-3 col-xs-12 ">
+                <iconify-icon class="green fs-1 py-3" icon="ph:clock"></iconify-icon>
+                <h5 class="font color1 fw-semibold">10 minute grocery now</h5>
+                <p class="color2  font font-14 fs-6">
+                    Get your order delivered to your doorstep at the earliest from FreshCart pickup stores near you.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-12">
+                <iconify-icon class="green fs-1 py-3" icon="carbon:gift"></iconify-icon>
+                <h5 class="font color1 fw-semibold">Best Prices & Offers</h5>
+                <p class="color2 font font-14 fs-6">
+                    Cheaper prices than your local supermarket, great cashback offers to top it off. Get best pricess &
+                    offers.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-12">
+                <iconify-icon class="green fs-1 py-3" icon="fluent:box-20-regular"></iconify-icon>
+                <h5 class="font color1 fw-semibold">Wide Assortment</h5>
+                <p class="color2 font fs-6 font-14">
+                    Choose from 5000+ products across food, personal care, household, bakery, veg and non-veg & other
+                    categories.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-12">
+                <iconify-icon class="green fs-1 py-3" icon="mynaui:refresh"></iconify-icon>
+                <h5 class="font color1 fw-semibold">Easy Returns</h5>
+                <p class="color2 font fs-6 font-14">
+                    Not satisfied with a product? Return it at the doorstep & get a refund within hours. No questions
+                    asked policy .
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-color2">
+        <div class="container">
+            <div class="row pt-5 ">
+                <div class="col-lg-2 col-md-2 col-xs-6 pt-5">
+                    <ul>
+                        <li class="list-unstyled  font color1 fs-4 ">
+                            <h6>categories</h6>
+                        </li>
+                        <li class="color2 font-14 font list-unstyled">Vegetables and Fruites</li>
+                        <li class="color2 font-14 font list-unstyled">Breakfast and Instant Food</li>
+                        <li class="color2 font-14 font list-unstyled"> Bakery and Biscuits</li>
+                        <li class="color2 font-14 font list-unstyled">Atta, Rice and Dal</li>
+                        <li class="color2 font-14 font list-unstyled">Sauces and Spreads</li>
+                        <li class="color2 font-14 font list-unstyled">Organic and gourmet</li>
+                        <li class="color2 font-14 font list-unstyled">Baby Care</li>
+                        <li class="color2 font-14 font list-unstyled">Cleaning Essantials</li>
+                        <li class="color2 font-14 font list-unstyled">Personal Care</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 pt-5">
+                    <ul>
+                        <li class="color2 font-14 font list-unstyled">Dairy,bread & Eggs</li>
+                        <li class="color2 font-14 font list-unstyled">Cold Drinks & Jucies</li>
+                        <li class="color2 font-14 font list-unstyled">Tea, Coffee & drinks</li>
+                        <li class="color2 font-14 font list-unstyled">Masala, oil & more</li>
+                        <li class="color2 font-14 font list-unstyled">Chicken, meat & fish</li>
+                        <li class="color2 font-14 font list-unstyled">Paan corner</li>
+                        <li class="color2 font-14 font list-unstyled">pharma & welness</li>
+                        <li class="color2 font-14 font list-unstyled">Home & office</li>
+                        <li class="color2 font-14 font list-unstyled">pet care</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 pt-5">
+                    <ul>
+                        <li class="list-unstyled font color1 fs-4">
+                            <h6>Get to know us</h6>
+                        </li>
+                        <li class="color2 font-14 font list-unstyled">Comapny</li>
+                        <li class="color2 font-14 font list-unstyled">About</li>
+                        <li class="color2 font-14 font list-unstyled">Blog</li>
+                        <li class="color2 font-14 font list-unstyled">Help center</li>
+                        <li class="color2 font-14 font list-unstyled">our value</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 pt-5">
+                    <ul>
+                        <li class="list-unstyled font color1 fs-4">
+                            <h6>For Consumers</h6>
+                        </li>
+                        <li class="color2 font-14 font list-unstyled">Payments</li>
+                        <li class="color2 font-14 font list-unstyled">Shipping</li>
+                        <li class="color2 font-14 font list-unstyled">Products Returns</li>
+                        <li class="color2 font-14 font list-unstyled">FAQ</li>
+                        <li class="color2 font-14 font list-unstyled">Shop checkout</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 pt-5">
+                    <ul>
+                        <li class="list-unstyled font color1 fs-6">
+                            <h6>Become a Shopper</h6>
+                        </li>
+                        <li class="color2 font-14 font list-unstyled">Shopper oppurtunities</li>
+                        <li class="color2 font-14 font list-unstyled">Become a Shopper</li>
+                        <li class="color2 font-14 font list-unstyled">Earnings</li>
+                        <li class="color2 font-14 font list-unstyled">Ideas and guides</li>
+                        <li class="color2 font-14 font list-unstyled">New Retailers</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-6 pt-5">
+                    <ul>
+                        <li class="list-unstyled font color1 fs-6">
+                            <h6>Freshcart programms</h6>
+                        </li>
+                        <li class="color2 font-14 font list-unstyled">Freshcart programms</li>
+                        <li class="color2 font-14 font list-unstyled">Gift Cards</li>
+                        <li class="color2 font-14 font list-unstyled">Promos and coupons</li>
+                        <li class="color2 font-14 font list-unstyled">Freshcart Ads</li>
+                        <li class="color2 font-14 font list-unstyled">Careers</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <span class="fw-bold pe-2">Payment Partners</span>
+                    <img src="./images/amazonpay.svg" alt="amazonpay-logo">
+                    <img class="px-2" src="./images/american-express.svg" alt="american-express">
+                    <img src="./images/mastercard.svg" alt="mastercar-logo">
+                    <img class="px-2" src="./images/paypal.svg" alt="paypal">
+                    <img src="./images/visa.svg" alt="visa-logo">
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <span class="fw-bold pe-2  font">Get deliveries with FreshCart</span>
+                    <img class="w-25" src="./images/apple-btn.svg" alt="apple-btn">
+                    <img class="w-25" src="./images/googleplay-btn.svg" alt="google-btn">
+                </div>
+            </div>
+            <hr>
+            <div class="row pb-5">
+                <div class="col-lg-9 col-md-9 col-xs-12">
+                    <p class="font-14 font color2">© 2022 - 2024 FreshCart eCommerce HTML Template. All rights reserved.
+                        Powered by</p>
+                    <p class="font-14 green font">Codescandy .</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12 d-flex">
+                    <span class="align-items-center font-14 color2">Follow us on</span>
+                    <div class=" ps-2">
+                        <iconify-icon class="color2 border rounded-3 fs-2" icon="ic:round-facebook"></iconify-icon>
+                        <iconify-icon class="color2 border rounded-3 fs-2" icon="mdi:twitter"></iconify-icon>
+                        <iconify-icon class="color2 border rounded-3 fs-2" icon="hugeicons:instagram"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
