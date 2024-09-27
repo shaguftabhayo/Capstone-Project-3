@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+font{
+    font-family: "Inter Tight", sans-serif;
+}
+.font-14{
+    font-size: 14px;
+}
+.bg-color2{
+    background-color: #F0F3F2;
+}
+.color2{
+    color: #9A9DB1;
+}
+.green{
+    color: #0AAD0A;
+}
+.navbar{
+    background-color: #0AAD0A;
+}
+@media (max-width: 576px) {
+ 
+    .head-1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .center{
+        text-align: center;
+    }
+    .center2{
+       padding-left: 45px;
+    }
+}

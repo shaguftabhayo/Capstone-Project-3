@@ -18,11 +18,11 @@
     <!-- Full Screen -->
     <header class="">
         <div class="  my-3 container">
-            <div class="row ">
+            <div class="row header">
                 <div class="col-lg-2 col-md-2 col-xs-12">
                     <img src="./images/freshcart-logo.svg" alt="">
                 </div>
-                <div class="col-lg-8 col-md-8 col-xs-12">
+                <div class="col-lg-8 col-md-8 col-xs-12 head">
                     <div class=" d-flex ">
                         <div>
                             <div class="input-group">
@@ -55,48 +55,64 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2 col-xs-12">
+
+
                     <div>
                         <iconify-icon class="fs-4" icon="tabler:heart"></iconify-icon>
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        <button type="button" class="btn bg-white" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            <iconify-icon class="pb-2 fs-4" icon="iconamoon:profile-light"></iconify-icon>
+                        </button>
 
-                                  </h1> -->
-                                  <iconify-icon class="mx-2 fs-4" icon="iconamoon:profile-light"></iconify-icon>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="row mb-3">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
-                                            <div class="col-sm-10">
-                                              <input type="text" class="form-control" id="inputEmail3">
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign-up</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="signupForm">
+                                            <div class="row mb-3">
+                                                <label for="inputEmail3"
+                                                    class="col-sm-2 col-form-label">Name</label><br>
+                                                <br>
+                                                <div class="col-sm-10">
+                                                    <input type="text" placeholder="Enter your name"
+                                                        class="form-control" id="userName">
+                                                </div>
                                             </div>
-                                          </div>
-                                        <div class="row mb-3">
-                                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                          <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="inputEmail3">
-                                          </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                          <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                          <div class="col-sm-10">
-                                            <input type="password" class="form-control" id="inputPassword3">
-                                          </div>
-                                        </div>
-                                      </form>
+                                            <div class="row mb-3">
+                                                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" placeholder="Enter your email"
+                                                        class="form-control" id="userEmail">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputPassword3"
+                                                    class="col-sm-2 col-form-label">Password</label>
+                                                <div class="col-sm-10">
+                                                    <input type="password" placeholder="Enter your password"
+                                                        class="form-control" id="userPassword">
+                                                </div>
+                                            </div>
+                                            <p class="font-14 font color2">By Signup, you agree to our <span
+                                                    class="font-14 font green">Terms of Service</span> & <span
+                                                    class="font-14 font green">Privacy Policy</span> </p>
+                                            <button type="submit"
+                                                class="border-0 text-white p-2 rounded navbar ">Sign-up</button><br>
+                                            <p class="font-14 font color2 text-center">Already have an account? <a
+                                                    href="./pages/signin.html">Sign in</a> </p>
+                                        </form>
+
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sign-in</button>
-                                  <button type="button" class="btn btn-primary">Sign-up</button>
-                                </div>
-                              </div>
                             </div>
-                          </div>
+                        </div>
+
                         <button class="border-0 bg-white" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                             <iconify-icon class="fs-4" icon="ri:shopping-bag-3-line"></iconify-icon></button>
@@ -114,8 +130,10 @@
                                 <p class="p-2 border-danger rounded bg-danger-subtle">
                                     You’ve got FREE delivery. Start checkout now!
                                 </p>
+                                <div id="cart-items">
+                                    <!-- Cart items will be appended here -->
+                                </div>
                             </div>
-                             
                         </div>
                     </div>
                 </div>
@@ -226,12 +244,9 @@
             </div>
         </nav>
     </header>
-    <!-- For small Screen -->
-     <header>
-        
-     </header>
+
     <section class="container">
-        <div class="d-flex row align-items-center bg-color2 my-4 py-4 rounded">
+        <div class="d-flex row align-items-center bg-color2 my-4 py-4 rounded center">
             <div class="col-lg-2 col-md-2 col-xs-12">
                 <img src="./images/cart.svg" alt="">
             </div>
@@ -267,7 +282,7 @@
                     <p class="fs-5 font Semibold weight text color2">
                         Refresh your day<br> the fruity way
                     </p>
-                    <button class="text-white font fon-14 p-2 bg-color rounded border-0">
+                    <button class="text-white font font-14 p-2 bg-color rounded border-0">
                         Shop Now
                     </button>
                 </div>
@@ -292,25 +307,28 @@
                 <div class="row row-cols-1 row-cols-md-4 g-4">
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-dairy-bread-eggs.jpg" alt="Dairy, Bread and Eggs">
+                            <img class="ms-4 center2" src="./images/category-dairy-bread-eggs.jpg"
+                                alt="Dairy, Bread and Eggs">
                             <p class="card-text text-center font font-14 color2"> Dairy, Bread and Eggs</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-snack-munchies.jpg" alt="Snack and Munchies-img">
+                            <img class="ms-4 center2" src="./images/category-snack-munchies.jpg"
+                                alt="Snack and Munchies-img">
                             <p class="card-text text-center font font-14 color2"> Snack and Munchies</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-bakery-biscuits.jpg" alt="Bakery and Biscuits">
+                            <img class="ms-4 center2" src="./images/category-bakery-biscuits.jpg"
+                                alt="Bakery and Biscuits">
                             <p class="card-text text-center font font-14 color2"> Bakery and Biscuits</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-instant-food.jpg" alt="Instant Food">
+                            <img class="ms-4 center2" src="./images/category-instant-food.jpg" alt="Instant Food">
                             <p class="card-text text-center font font-14 color2">Instant Food</p>
                         </div>
                     </div>
@@ -320,27 +338,28 @@
                 <div class="row row-cols-1 row-cols-md-4 g-4">
                     <div class="col">
                         <div class="border rounded p-5">
-                            <img class="ms-4" src="./images/category-tea-coffee-drinks.jpg" alt="Tea,Coffee and Drinks">
+                            <img class="ms-4 center2" src="./images/category-tea-coffee-drinks.jpg"
+                                alt="Tea,Coffee and Drinks">
                             <p class="card-text text-center font font-14 color2">Tea,Coffee and Drinks</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-fruits-vegetables.jpg"
+                            <img class="ms-4 center2" src="./images/category-fruits-vegetables.jpg"
                                 alt="Fruites and Vegetables">
                             <p class="card-text text-center font font-14 color2"> Fruites and Vegetables</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-cold-drinks-juices.jpg"
+                            <img class="ms-4 center2" src="./images/category-cold-drinks-juices.jpg"
                                 alt="Cold Drinks and Juices">
                             <p class="card-text text-center font font-14 color2"> Cold Drinks and Juices</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-chicken-meat-fish.jpg"
+                            <img class="ms-4 center2" src="./images/category-chicken-meat-fish.jpg"
                                 alt="Cold Drinks and Juices">
                             <p class="card-text text-center font font-14 color2">Chicken Meat and Fish</p>
                         </div>
@@ -351,25 +370,27 @@
                 <div class="row row-cols-1 row-cols-md-4 g-4">
                     <div class="col">
                         <div class="border rounded p-5">
-                            <img class="ms-4" src="./images/category-baby-care.jpg" alt="Baby Care">
+                            <img class="ms-4 center2" src="./images/category-baby-care.jpg" alt="Baby Care">
                             <p class="card-text text-center font font-14 color2">Baby Care</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-cleaning-essentials.jpg" alt="Cleaning Essantials">
+                            <img class="ms-4 center2" src="./images/category-cleaning-essentials.jpg"
+                                alt="Cleaning Essantials">
                             <p class="card-text text-center font font-14 color2">Cleaning Essantials</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-pet-care.jpg" alt="Pet Care">
+                            <img class="ms-4 center2" src="./images/category-pet-care.jpg" alt="Pet Care">
                             <p class="card-text text-center font font-14 color2">Pet Care</p>
                         </div>
                     </div>
                     <div class="col">
                         <div class="border rounded p-5 ">
-                            <img class="ms-4" src="./images/category-atta-rice-dal.jpg" alt="Atta Rice and Daal">
+                            <img class="ms-4 center2" src="./images/category-atta-rice-dal.jpg"
+                                alt="Atta Rice and Daal">
                             <p class="card-text text-center font font-14 color2">Atta Rice and Daal</p>
                         </div>
                     </div>
@@ -392,7 +413,7 @@
             <div>
                 <div class="row row-cols-1 row-cols-md-4 g-4">
                     <div class="col">
-                        <div class="border rounded  ">
+                        <div class="border rounded">
                             <button class="bg-danger font font-14 border-0 rounded text-white ms-4 mt-4">Sale</button>
                             <div>
                                 <img class="" src="./images/apple-img.jpg" alt="apple-img"><br>
@@ -409,11 +430,11 @@
                                 <div class="d-flex justify-content-between">
                                     <p class="Semibold weight text font font-14">$18<span
                                             class="color2 text-decoration-line-through font font-14">$24</span></p>
-                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font font-14">+
+                                    <button onclick="addToCart('Fresh Apple', 18, './images/apple-img.jpg')"
+                                        class="navbar border-0 p-2 text-white rounded fs-6 font font-14">+
                                         Add</button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="col">
@@ -433,7 +454,8 @@
                                 <span class="color2 font font-14">4.5(25)</span>
                                 <div class="d-flex justify-content-between font font-14">
                                     <p class="Semibold weight text">$24</p>
-                                    <button class="navbar border-0 font font-14 p-2 text-white rounded fs-6">+
+                                    <button onclick="addToCart('Golden Pineapple','24', './images/pine apple img.jpg')"
+                                        class="navbar border-0 font font-14 p-2 text-white rounded fs-6">+
                                         Add</button>
                                 </div>
                             </div>
@@ -456,7 +478,8 @@
                                 <span class="color2 font font-14">5(469)</span>
                                 <div class="d-flex justify-content-between">
                                     <p class="Semibold weight text font font-14">$24</p>
-                                    <button class="navbar border-0 p-2 text-white rounded font font-14 fs-6">+
+                                    <button onclick="addToCart('Fresh Kiwi', 24, './images/Kiwi-img.jpg', 'ufykuy')"
+                                        class="navbar border-0 p-2 text-white rounded font font-14 fs-6">+
                                         Add</button>
                                 </div>
                             </div>
@@ -482,7 +505,8 @@
                                     <p class="Semibold weight text font font-14">$3
                                         <span class="color2 text-decoration-line-through font font-14">$5</span>
                                     </p>
-                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font font-14">+
+                                    <button onclick="addToCart('Golden Banana', '$3', './images/banana-img.jpg',)"
+                                        class="navbar border-0 p-2 text-white rounded fs-6 font font-14">+
                                         Add</button>
                                 </div>
                             </div>
@@ -523,7 +547,9 @@
                                 <div class="d-flex justify-content-between">
                                     <p class="Semibold weight text font-14 font">$13<span
                                             class="color2 text-decoration-line-through font-14 font">$18</span></p>
-                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
+                                    <button
+                                        onclick="addToCart('Haldirams Sev Bhujia', '$13', './images/haldrim-img.jpg',)"
+                                        class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
                                         Add</button>
                                 </div>
                             </div>
@@ -547,7 +573,9 @@
                                 <span class="color2 font-14 font">4.5(25)</span>
                                 <div class="d-flex justify-content-between ">
                                     <p class="Semibold weight text font-14 font">$24</p>
-                                    <button class="navbar border-0 p-2 font text-white rounded fs-6 font-14">+
+                                    <button
+                                        onclick="addToCart('NutriChoice Digestive', '$24', './images/nutri-img.jpg')"
+                                        class="navbar border-0 p-2 font text-white rounded fs-6 font-14">+
                                         Add</button>
                                 </div>
                             </div>
@@ -572,7 +600,9 @@
                                     <p class="Semibold weight text font-14 font">$32
                                         <span class="color2 text-decoration-line-through font-14 font">$35</span>
                                     </p>
-                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
+                                    <button
+                                        onclick="addToCart('Cadbury 5 Star Choclate', '$32', './images/choclate-img.jpg')"
+                                        class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
                                         Add</button>
                                 </div>
                             </div>
@@ -598,7 +628,9 @@
                                     <p class="Semibold weight text font-14 font">$18
                                         <span class="color2 text-decoration-line-through font-14 font">$24</span>
                                     </p>
-                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
+                                    <button
+                                        onclick="addToCart('Blueberry Greek Yogurt',$18, './images/blueberry-img.jpg')"
+                                        class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
                                         Add</button>
                                 </div>
                             </div>
@@ -638,7 +670,9 @@
                                 <span class="color2 font-14 font">3(345)</span>
                                 <div class="d-flex justify-content-between">
                                     <p class="Semibold weight text font-14 font">$24</p>
-                                    <button class="navbar font border-0 p-2 text-white rounded font-14">+ Add</button>
+                                    <button
+                                        onclick="addToCart('Britannia Chesse Slice','$24', './images/chesse-img.jpg')"
+                                        class="navbar font border-0 p-2 text-white rounded font-14">+ Add</button>
                                 </div>
                             </div>
 
@@ -663,7 +697,9 @@
                                     <p class="Semibold weight text font-14 font">$32
                                         <span class="color2 font-14 text-decoration-line-through font">$35</span>
                                     </p>
-                                    <button class="navbar border-0 font-14 p-2 text-white rounded fs-6 font">+
+                                    <button
+                                        onclick="addToCart('Kelloggs Original Cereals','$32', './images/corn-img.jpg')"
+                                        class="navbar border-0 font-14 p-2 text-white rounded fs-6 font">+
                                         Add</button>
                                 </div>
                             </div>
@@ -688,7 +724,9 @@
                                     <p class="Semibold weight text font">$3
                                         <span class="color2 font-14 text-decoration-line-through font">$5</span>
                                     </p>
-                                    <button class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
+                                    <button
+                                        onclick="addToCart('Slurrp Millet Choclate','$3', './images/slurrp-img.jpg')"
+                                        class="navbar border-0 p-2 text-white rounded fs-6 font-14 font">+
                                         Add</button>
                                 </div>
                             </div>
@@ -714,7 +752,8 @@
                                     <p class="Semibold weight text font-14 font">$13
                                         <span class="color2 font-14 text-decoration-line-through font">$18</span>
                                     </p>
-                                    <button class="navbar border p-2 text-white rounded font-14 fs-6 font">+
+                                    <button onclick="addToCart('Amul Butter -500g','$13', './images/blueberry-img.jpg')"
+                                        class="navbar border p-2 text-white rounded font-14 fs-6 font">+
                                         Add</button>
                                 </div>
                             </div>
@@ -728,7 +767,7 @@
     <section class="container">
         <hr>
         <div class=" align-items-center justify-content-center py-5 row">
-            <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-xs-12 center">
                 <img src="./images/mobile-img.png" alt="mobile-img">
             </div>
             <div class=" col-lg-4 col-md-4 col-xs-12">
@@ -916,6 +955,8 @@
         </div>
 
     </footer>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

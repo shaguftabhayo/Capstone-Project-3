@@ -41,4 +41,18 @@ font{
 .yellow{
     color: #fcd53f;
 }
-
+@media (max-width: 576px) {
+    .head{
+        display: none !important;
+    }
+    .header{
+        display: flex !important; 
+        justify-content: space-between !important;
+    }
+    .center{
+        text-align: center;
+    }
+    .center2{
+       padding-left: 45px;
+    }
+}
