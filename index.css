@@ -46,7 +46,7 @@ font{
         display: none !important;
     }
     .header{
-        display: flex !important; 
+        display: flex !important;
         justify-content: space-between !important;
     }
     .center{
